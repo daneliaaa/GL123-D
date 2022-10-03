@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/Formulario.css">
+</head>
+    <body>   
+        <header>
+            <nav class="menu">
+              <fieldset>
+                <legend>Menu</legend>
+                <form action="../CV Michael Jordan.html">    
+                    <input type="submit" value="CV Michael Jordan"> 
+                </form>
+                <br>
+               <form action="../CV Rosa Guadamuz.html">                   
+                    <input type="submit" value="CV Rosa Guadamuz">                     
+               </form>
+               <br>
+               <form action="../CV Jeremi Chacon.html">                  
+                <input type="submit" value="CV Jeremi Chacon">
+               </form>
+               <br>
+              <form action="Lab4.html">                  
+                <input type="submit" value="Crear CV">
+              </form>
+              </fieldset>
+            </nav>
+        </header> 
+        <h1>Formulario</h1> 
+        <form action="../CV Michael Jordan.html"> 
+            <section class="cuerpo">
+                <fieldset>
+                    <h2>Datos generales</h2>
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Introduzca su nombre">
+                    <label for="">Cedula</label>
+                    <input type="text" name="cedula" placeholder="Ej. x-xxx-xxxx">
+                    <label for="">Email</label>
+                    <input type="email"placeholder="Correo">
+                    <label for="">Telefono</label> 
+                    <input type="tel"placeholder="Introduzca su tel"> 
+                    <label for="">Fecha de Nacimiento</label>
+                    <input type="date">
+                </fieldset>                
+            </section>  
+            <section class="cuerpo">
+                <fieldset>
+                    <h2>Educación</h2>
+                    <label for="Universidad"></label>
+                    <input type="text"placeholder="Universidad">
+                    <label for="Titulo"></label>
+                    <input type="text"placeholder="Titulo">
+                    <label for="Inicio"></label>
+                    <input type="date">
+                </fieldset>
+            </section>
+            <section class="cuerpo">
+                <fieldset>
+                    <h2>Experiencia</h2>
+                    <label for="Empresa en la que trabajo"></label>
+                    <input type="text"placeholder="Empresa">
+                    <label for="Puesto"></label>
+                    <input type="text"placeholder="Puesto">
+                    <label for="">desde</label>
+                    <input type="date">
+                    <label for="">hasta</label>
+                    <input type="date">
+                </fieldset>
+            </section>
+            <section class="cuerpo">
+                <fieldset>
+                    <h2>Conocimetos</h2>
+                    <input type="text">
+                </fieldset>
+            </section>
+            <section class="cuerpo">
+                <fieldset>
+                    <h2>Otros datos</h2>
+                    <legend>Otros Datos</legend>
+                    <label for="">Genero</label>
+                    <input type="radio" name="genero" id="">M
+                    <input type="radio" name="genero" id="">F
+                    <br>
+                    <label for="">Actualmente soy</label>
+                    <select name="" id="">
+                        <option value="">Estudiante</option>
+                        <option value="">Trabajo</option>
+                        <option value="">Desemplead@</option>
+                        <option value="">Am@ de casa</option>
+                    </select>
+                    <label for="">Mas sobre mi</label>
+                    <input type="text">
+                </fieldset>
+            </section>
+            <br>
+            <input type="reset" value="Reiniciar Campos">
+            <input type="submit" value="Enviar Datos">
+        </form>
+    </body>
+</html>
