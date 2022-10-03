@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6_MJordan_RGuadamuz_JChacon</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <header class="titulo">
+                <h1>Laboratorio N°6 CSS Positions and Floating</h1>
+            </header>
+            <div class="menu">      
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Reservar</a></li>
+                    <li><a href="">Contactanos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="articulos">
+        <h1>Las Playas más Bonitas del Planeta Tierra</h1>
+        <p>En este articulo encontraras las mejores playas del Planeta Tierra</p>
+        <!-- Fila1 -->
+        <div class="flex">
+            <!--columna1-->
+            <div class="articulos-col">
+                <h1>Great Barrier Reef</h1>
+                <img src="img/GranBarrera.png" class="imgpaisajes">
+                <p>La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo 
+                    compuesto por más de 2900 arrecifes individuales y 900 islas que se extienden por
+                    más de 2300 kilómetros en un área de aproximadamente 344 400 kilómetros cuadrados. 
+                    <a href="#" onclick="vermas('mas');" id="mas">...(ver mas)</a>
+                    <p id="desplegar" style="display:none;">El arrecife está ubicado en el Mar del Coral, 
+                    frente a la costa de Queensland, 
+                    Australia, separado de la costa por un canal de 100 millas de ancho en algunos 
+                    lugares y más de 200 pies de profundidad. La Gran Barrera de Coral se puede ver 
+                    desde el espacio exterior y es la estructura individual más grande del mundo hecha 
+                    por organismos vivos. Esta estructura de arrecife está compuesta y construida por 
+                    miles de millones de pequeños organismos, conocidos como pólipos de coral. 
+                    Es compatible con una amplia diversidad de vida y fue seleccionado como Patrimonio 
+                    de la Humanidad en 1981. CNN lo calificó como una de las siete maravillas naturales 
+                    del mundo en 1997. Los lugares del Patrimonio Mundial de Australia lo incluyeron en 
+                    su lista en 2007.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna2-->
+            <div class="articulos-col">
+                <h1>Palolem</h1>
+                <img src="img/Palolem.png" class="imgpaisajes">
+                <p>El cálido mar de Arabia baña esta playa del estado indio de Goa, en la costa oeste. 
+                    Su lengua de arena de 1,6 km se encuentra delimitada en ambos extremos por dos 
+                    grandes rocas. Hasta hace poco, las casas (shacks) y las barcas de pescadores eran 
+                    la única evidencia humana en Palolem, pero recientemente ha surgido una incipiente </p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;"> infraestructura turística, en parte gracias a su 
+                    aparición en la película El mito de 
+                    Bourne (2004). A solo 12 kilómetros, los bosques del Cotigao Wildlife Sanctuary son 
+                    el hábitat de monos y tigres de Bengala.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna3-->
+            <div class="articulos-col">
+                <h1>Benagil</h1>
+                <img src="img/Benagil.png" class="imgpaisajes">
+                <p>La región del Algarve, en Portugal, es famosa por albergar algunas de las playas mas 
+                    bellas de la costa atlántica en la península Ibérica. Y precisamente allí está la 
+                    playa de Benagil, enclave donde confluyen el bosque mediterráneo con las aguas del</p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;">océano Atlántico. Un pequeño emplazamiento de 
+                        arenas marrones y abierto al mar entre 
+                    cuyos acantilados circundantes el visitante puede aventurarse en la exploración de 
+                    las múltiples cuevas formadas por la erosión del mar.
+                    <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+        </div>
+        <!--fila2-->
+        <div class="flex">
+            <!--columna1-->
+            <div class="articulos-col">
+                <h1>Great Barrier Reef</h1>
+                <img src="img/GranBarrera.png" class="imgpaisajes">
+                <p>La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo 
+                    compuesto por más de 2900 arrecifes individuales y 900 islas que se extienden por
+                    más de 2300 kilómetros en un área de aproximadamente 344 400 kilómetros cuadrados. 
+                    <a href="#" onclick="vermas('mas');" id="mas">...(ver mas)</a>
+                    <p id="desplegar" style="display:none;">El arrecife está ubicado en el Mar del Coral, 
+                    frente a la costa de Queensland, 
+                    Australia, separado de la costa por un canal de 100 millas de ancho en algunos 
+                    lugares y más de 200 pies de profundidad. La Gran Barrera de Coral se puede ver 
+                    desde el espacio exterior y es la estructura individual más grande del mundo hecha 
+                    por organismos vivos. Esta estructura de arrecife está compuesta y construida por 
+                    miles de millones de pequeños organismos, conocidos como pólipos de coral. 
+                    Es compatible con una amplia diversidad de vida y fue seleccionado como Patrimonio 
+                    de la Humanidad en 1981. CNN lo calificó como una de las siete maravillas naturales 
+                    del mundo en 1997. Los lugares del Patrimonio Mundial de Australia lo incluyeron en 
+                    su lista en 2007.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna2-->
+            <div class="articulos-col">
+                <h1>Palolem</h1>
+                <img src="img/Palolem.png" class="imgpaisajes">
+                <p>El cálido mar de Arabia baña esta playa del estado indio de Goa, en la costa oeste. 
+                    Su lengua de arena de 1,6 km se encuentra delimitada en ambos extremos por dos 
+                    grandes rocas. Hasta hace poco, las casas (shacks) y las barcas de pescadores eran 
+                    la única evidencia humana en Palolem, pero recientemente ha surgido una incipiente </p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;"> infraestructura turística, en parte gracias a su 
+                    aparición en la película El mito de 
+                    Bourne (2004). A solo 12 kilómetros, los bosques del Cotigao Wildlife Sanctuary son 
+                    el hábitat de monos y tigres de Bengala.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna3-->
+            <div class="articulos-col">
+                <h1>Benagil</h1>
+                <img src="img/Benagil.png" class="imgpaisajes">
+                <p>La región del Algarve, en Portugal, es famosa por albergar algunas de las playas mas 
+                    bellas de la costa atlántica en la península Ibérica. Y precisamente allí está la 
+                    playa de Benagil, enclave donde confluyen el bosque mediterráneo con las aguas del</p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;">océano Atlántico. Un pequeño emplazamiento de arenas 
+                        marrones y abierto al mar entre 
+                    cuyos acantilados circundantes el visitante puede aventurarse en la exploración de 
+                    las múltiples cuevas formadas por la erosión del mar.
+                    <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+        </div>
+        <!--fila3-->
+        <div class="flex">
+            <!--columna1-->
+            <div class="articulos-col">
+                <h1>Great Barrier Reef</h1>
+                <img src="img/GranBarrera.png" class="imgpaisajes">
+                <p>La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo 
+                    compuesto por más de 2900 arrecifes individuales y 900 islas que se extienden por
+                    más de 2300 kilómetros en un área de aproximadamente 344 400 kilómetros cuadrados. 
+                    <a href="#" onclick="vermas('mas');" id="mas">...(ver mas)</a>
+                    <p id="desplegar" style="display:none;">El arrecife está ubicado en el Mar del Coral, 
+                    frente a la costa de Queensland, 
+                    Australia, separado de la costa por un canal de 100 millas de ancho en algunos 
+                    lugares y más de 200 pies de profundidad. La Gran Barrera de Coral se puede ver 
+                    desde el espacio exterior y es la estructura individual más grande del mundo hecha 
+                    por organismos vivos. Esta estructura de arrecife está compuesta y construida por 
+                    miles de millones de pequeños organismos, conocidos como pólipos de coral. 
+                    Es compatible con una amplia diversidad de vida y fue seleccionado como Patrimonio 
+                    de la Humanidad en 1981. CNN lo calificó como una de las siete maravillas naturales 
+                    del mundo en 1997. Los lugares del Patrimonio Mundial de Australia lo incluyeron en 
+                    su lista en 2007.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna2-->
+            <div class="articulos-col">
+                <h1>Palolem</h1>
+                <img src="img/Palolem.png" class="imgpaisajes">
+                <p>El cálido mar de Arabia baña esta playa del estado indio de Goa, en la costa oeste. 
+                    Su lengua de arena de 1,6 km se encuentra delimitada en ambos extremos por dos 
+                    grandes rocas. Hasta hace poco, las casas (shacks) y las barcas de pescadores eran 
+                    la única evidencia humana en Palolem, pero recientemente ha surgido una incipiente </p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;"> infraestructura turística, en parte gracias a su 
+                    aparición en la película El mito de 
+                    Bourne (2004). A solo 12 kilómetros, los bosques del Cotigao Wildlife Sanctuary son 
+                    el hábitat de monos y tigres de Bengala.
+                <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+            <!--columna3-->
+            <div class="articulos-col">
+                <h1>Benagil</h1>
+                <img src="img/Benagil.png" class="imgpaisajes">
+                <p>La región del Algarve, en Portugal, es famosa por albergar algunas de las playas mas 
+                    bellas de la costa atlántica en la península Ibérica. Y precisamente allí está la 
+                    playa de Benagil, enclave donde confluyen el bosque mediterráneo con las aguas del</p>
+                    <a href="#" onclick="vermas('mas');" id="mas">..ver mas</a>
+                    <p id="desplegar" style="display:none;">océano Atlántico. Un pequeño emplazamiento 
+                        de arenas marrones y abierto al mar entre 
+                    cuyos acantilados circundantes el visitante puede aventurarse en la exploración de 
+                    las múltiples cuevas formadas por la erosión del mar.
+                    <a href="#" onclick="vermas('menos');" id="menos">... [ver menos]</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="banner">
+            <h2 >Descubre Las Areas Hermosas Del Planeta Tierra</h2>
+            <p>El planeta tierra cuenta con 595.814 km de litoral. 
+                Una cifra asombrosa que denota otra realidad: el mundo está repleto de acantilados 
+                fascinantes y sí, de playas que son una delicia paisajística. Muchas de ellas son un 
+                santuario natural. Otras, una rareza geológica. Y otras, sencillamente, cumplen con 
+                todos lo requisitos para un día perfecto de sol y playa.</p>
+        </div>
+    </section>
+    
+    <footer class="pie">
+        <div class="UTP">
+            <img src="img/logo_utp1.png" alt="">
+        </div>
+        <div class="FISC">
+            <img src="img/logo_fisc.jpg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
