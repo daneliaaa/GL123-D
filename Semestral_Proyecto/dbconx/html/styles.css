@@ -1,0 +1,748 @@
+/* Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorPrincipal:#d51e3a;
+    --colorSecundario:#147c3f;
+    --colorTerciario:#006eb2;
+    --colorFondo: #EEEEEE;
+    --h1:2.5rem;
+    --subtitulo:1.8rem;
+    --parrafo:1.0rem;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #1b1b1b;
+    background: var(--colorFondo);
+}
+
+a{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--colorPrincipal);
+}
+
+ul{
+    list-style: none;
+}
+
+table{
+    width:100%;
+  }
+#example_filter{
+    float:right;
+  }
+#example_paginate{
+    float:right;
+  }
+label {
+    display: inline-flex;
+    margin-bottom: .5rem;
+    margin-top: .5rem; 
+  }
+.row {
+    padding: 50px;
+    margin: 50px;
+}
+
+
+/* Header cel*/
+.logo-img{
+    width: 100px;
+    height: 45px;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.header_cel{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 0px 5px 27px 7px rgba(196,192,196,0.5);
+}
+
+.nav-cel{
+    position: relative;
+    z-index: 1;
+    
+}
+.nav-cel_list{
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--parrafo);
+    padding: 40px 15px 25px 15px;
+    border-radius: 10px;
+}
+.fa-bars{
+    font-size: 1.8rem;
+}
+.fa-bars:hover{
+    color: var(--colorPrincipal);
+}
+.nav-cel:hover .nav-cel_list{
+    background-color: var(--colorFondo);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 150px;
+    height: 300px;
+    left: -110px; 
+}
+
+/* BUSQUEDA */
+.seccion-busqueda{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    margin: 35px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.fa-magnifying-glass{
+    color: var(--colorSecundario);
+    font-size: 1.3rem;
+    padding:0 5px 0 15px;
+}
+
+.busqueda-item{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+
+/* MAIN */
+.main{
+    width: 100%;
+    height: auto;
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.section{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border-radius: 5px;  
+}
+
+.section:nth-child(1){
+    background-image: url('img/Atletismo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section:nth-child(2){
+    background-image: url('img/Gimnasia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section:nth-child(3){
+    background-image: url('img/Natacion.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cortina{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(160deg, #0094e978 0%, #80d0c78f 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right:0;
+}
+.section:hover .cortina{
+    display: flex;
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+}
+
+.section .section-links{
+    color: var(--colorFondo);
+    font-weight: 500;
+    font-size: var(--subtitulo);
+}
+
+
+/* SECCION DEPORTES */
+.seccion-deportes{
+    width: 100%;
+    height: auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+
+}   
+
+.seccion-deportes h2 {
+    text-align: center;
+    font-size: var(--subtitulo);
+}
+
+/* Definicion */
+.definicion{
+    width: 100%;
+    height: auto;
+}
+
+.definicion-img{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    padding: 20px 0 0 0;
+}
+
+.definicion-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.definicion p{
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+
+/* Equipamiento */
+
+.equipamiento{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+
+.equipamiento p{
+    font-size: var(--parrafo);
+}
+
+.equipamiento-img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.equipamiento-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Reglas */
+.reglas h4{
+    text-align: center;
+    padding: 20px 0 15px 0;
+}
+
+.reglas p {
+    text-align: center;
+}
+
+/* Categorías */
+.categorias h4{
+    text-align: center;
+    padding: 20px 0 15px 0;
+}
+.categorias-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.categorias-img div{
+    border-radius: 5px;
+    width: 110px;
+    height: 110px;
+    /* border: 1px solid black; */
+    margin: 20px 0 20px 0;
+}
+
+.categorias-img div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.categorias .ul-categorias{
+    list-style: disc;
+}
+
+
+/* NOSOTROS */
+.nosotros-grid{
+    /* border:3px solid black; */
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.grid-img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-img:nth-child(1){
+    /* border: 2px solid red; */
+    grid-column: 1 / 3;
+    background-image: url('img/antorcha_olimpica.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.grid-img:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    /* border: 2px solid green; */
+    background-image: url('img/panama_olimpiadas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.grid-img:nth-child(3){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    /* border: 2px solid blue; */
+    background-image: url('img/Usain_Bolt.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+
+/* CONTACTO */
+.contacto h2{
+    text-align: center;
+}
+.section-form{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-input{
+    outline:none;
+    border: none;
+    padding: 10px;
+    font-size: var(--parrafo);
+    border-radius: 5px;   
+}
+
+.contact-submit{
+    border: 1.5px solid var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+}
+
+/*  CRUD */
+.crud h2{
+    text-align: center;
+}
+.section-form{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.crud-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.crud-input{
+    outline:none;
+    border: none;
+    padding: 10px;
+    font-size: var(--parrafo);
+    border-radius: 5px;   
+}
+
+.crud-submit{
+    border: 1.5px solid var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+}
+
+
+/* LOGIN */
+.section-login{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid #d4d4d4;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.section-login p {
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+
+.section-login p a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.login-form{
+    display: block;
+    width: 100%;
+    height: 250px;
+    gap: 2rem;
+    
+}
+
+.login-email, .login-password{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0 15px 0;
+    justify-self: center;
+}
+
+.button-item{
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--parrafo);
+}
+
+.button-item:nth-child(1){
+    background-color: var(--colorSecundario);
+    border: 2px solid var(--colorSecundario);
+    border-radius: 5px;
+    padding: 5px 2px 5px 2px;
+    width: 40%;
+    color: var(--colorFondo);
+}
+
+.button-item:nth-child(2){
+    background-color: var(--colorTerciario);
+    border: 2px solid var(--colorTerciario);
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+    width: 50%;
+    color: var(--colorFondo);
+    text-align: center;
+}
+
+.button-item1{
+    background-color: var(--colorSecundario);
+    border: 2px solid var(--colorSecundario);
+    border-radius: 5px;
+    padding: 5px 2px 5px 2px;
+    width: 30%;
+    margin-left: 70px;
+    color: var(--colorFondo);
+}
+.login-buttons{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscar-buttons{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Registro */
+.registro{
+    width: 100%;
+    height: 350px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
+ 
+}
+
+.registro-form{
+    width: 90%;
+    height: 350px;     
+}
+
+.registro-inputs{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.registro-buttons{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* RECUPERAR */
+
+
+
+.recuperar-item {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recuperar-item:nth-child(2){
+    background-color: var(--colorSecundario);
+    color: var(--colorFondo);
+}
+
+/* PERFIL */
+.seccion-perfil{
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+/* Reporte */
+.reporte-img{
+    max-width: 500px;
+    max-height: auto;
+}
+
+.reporte-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--colorPrincipal);
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-autores{
+    text-align: center;
+    color: var(--colorFondo);
+}
+
+
+
+
+
+@media screen and (min-width: 0) {
+    .header_pc{
+        display: none;  
+    }
+}
+
+@media screen and (min-width:650px) {
+
+    .definicion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .definicion p{
+        width: 50%;
+        text-align: right;
+    }
+
+    .reglas p{
+        text-align: left;
+    }
+
+    .categorias-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+    }
+
+    .categorias-img div {
+        width: 270px;
+        height: 200px;
+    }
+
+
+    .reporte-img{
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .main-deportes{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .section{
+        width: 90%;
+        height: 500px;
+    }
+
+    
+    
+
+
+
+
+    .header_cel{
+        display: none;
+    }
+
+    .header_pc{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 15px 20px;
+    }
+    
+    .header_nav{
+        width: 300px;
+    }
+
+    .nav-pc_list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-pc_list li{
+        margin: 0 25px;
+    }
+
+    .nav-pc_list li a{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .nav-pc_list li a:hover{
+        color: var(--colorPrincipal);
+    }
+
+
+    /* NOSOTROS */
+    .nosotros-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+
+    
+    .grid-img:nth-child(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 6;
+    }
+
+    .grid-img:nth-child(2){
+        grid-column: 2 / 3;
+        grid-row: 1 / 6;
+    }
+
+    .grid-img:nth-child(3){
+        grid-column:  3 / 4;
+        grid-row: 1 / 6;
+    }
+}

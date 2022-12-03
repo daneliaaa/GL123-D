@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reportes</title>
+    
+        <!-- TIPOGRAFÍA -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+        <!-- ICONOS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+    
+        <!--javascpr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+</head>
+<body class="container" onload="ObtenerPais()">
+    
+
+    <!-- header para celular -->
+    <header class="header_cel">
+        <div class="logo-img">
+            <img src="img/logo_olimpiadas.png" alt="logo">
+        </div>
+        
+            <nav class="nav-cel fa-solid fa-bars">
+                <ul class="nav-cel_list">
+                    <li class="nav_cel-item"><a href="index.html">Inicio</a></li>
+                    <li class="nav_cel-item"><a href="deportes.html">Deportes</a></li>
+                    <li class="nav_cel-item"><a href="acerca.html">Nosotros</a></li>
+                    <li class="nav_cel-item"><a href="crud.html">CRUD</a></li>
+                    <li class="nav_cel-item"><a href="busqueda.html">Busqueda</a></li>
+                    <li class="nav_cel-item"><a href="reportes.html">Reportes</a></li>
+                    <li class="nav_cel-item"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav_cel-item"><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- HEADER PC -->
+    <header class="header_pc">
+        <div class="logo-img">
+            <img src="img/logo_olimpiadas.png" alt="logo">
+        </div>
+
+        <nav class="header-nav">
+            <ul class="nav-pc_list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="deportes.html">Deportes</a></li>
+                <li><a href="acerca.html">Nosotros</a></li>
+                <li><a href="crud.html">CRUD</a></li>
+                <li><a href="busqueda.html">Busqueda</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <table id="tablaPaises" class="table table-striped table-bordered" style="width:100%">
+          <thead>
+            <tr>
+              <th>Accion</th>
+              <th>codpais</th>
+              <th>Nombre</th>
+              <th>Medalla Oro</th>
+              <th>Medalla Plata</th>
+              <th>Medalla Bronce</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTabla">
+            
+          </tbody>
+        </table>
+        <script src="index.js"></script>
+      </div>
+    
+    <main class="main">
+        <h1>Reportes General</h1>
+        <div class="reporte-img">
+            <img src="img/Medallas_Atletismo.png" alt="">
+        </div>
+
+        <div class="reporte-img">
+            <img src="img/Medallas_Gimnasia.png" alt="">
+        </div>
+
+        <div class="reporte-img">
+            <img src="img/Medallas_Natación.png" alt="">
+        </div>
+    </main>
+
+
+
+    
+    <footer class="footer">
+        <article class="footer-autores">
+            <h3>Rosa Guadamuz</h3>
+            <p>guadamuz.rosa@gmail.com</p>
+        </article>
+
+        <article class="footer-autores">
+            <h3>Jeremi Chacón</h3>
+            <p>jeremichacon2000@gmail.com</p>
+        </article>
+
+        <article class="footer-autores">
+            <h3>Michael Jordan</h3>
+            <p>jordan50999@gmail.com</p>
+        </article>
+    </footer>
+
+
+</body>
+</html>

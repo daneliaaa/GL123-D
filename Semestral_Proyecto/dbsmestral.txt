@@ -1,0 +1,40 @@
+proc actualizar
+BEGIN
+	UPDATE pais SET 
+		pais.nombre = nom,
+		pais.moro = oro,
+		pais.mplata = plata,
+		pais.mbronce = bronce
+	
+	WHERE pais.codpais = cod_pais;
+END
+
+proc eliminaar
+BEGIN
+	DELETE FROM pais
+	WHERE pais.codpais = cod_pais;
+END
+
+proc inserta
+BEGIN
+	insert into paises (nombre, moro, mplata, mbronce)
+	values (nm,mo,mp,mb);
+END
+
+pais
+CREATE TABLE `paises` (
+	`codpais` INT(11) NOT NULL AUTO_INCREMENT,
+	`nombre` CHAR(50) NULL DEFAULT NULL,
+	`moro` INT(11) NULL DEFAULT NULL,
+	`mplata` INT(11) NULL DEFAULT NULL,
+	`mbronce` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`codpais`)
+)
+
+registr
+CREATE TABLE `registrar` (
+	`correo` VARCHAR(50) NOT NULL,
+	`nombre` CHAR(50) NULL DEFAULT NULL,
+	`contraseña` VARCHAR(20) NULL DEFAULT NULL,
+	PRIMARY KEY (`correo`)
+)

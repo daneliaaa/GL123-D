@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deportes</title>
+    
+        <!-- TIPOGRAFÍA -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+        <!-- ICONOS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+      <!--javascpr-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    
+    </head>
+    
+<body class="container" onload="obtenerDescripcion()">
+
+ <!-- header para celular -->
+ <header class="header_cel">
+    <div class="logo-img">
+        <img src="img/logo_olimpiadas.png" alt="logo">
+    </div>
+    
+        <nav class="nav-cel fa-solid fa-bars">
+            <ul class="nav-cel_list">
+                <li class="nav_cel-item"><a href="index.html">Inicio</a></li>
+                <li class="nav_cel-item"><a href="deportes.html">Deportes</a></li>
+                <li class="nav_cel-item"><a href="acerca.html">Nosotros</a></li>
+                <li class="nav_cel-item"><a href="crud.html">CRUD</a></li>
+                <li class="nav_cel-item"><a href="busqueda.html">Busqueda</a></li>
+                <li class="nav_cel-item"><a href="reportes.html">Reportes</a></li>
+                <li class="nav_cel-item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav_cel-item"><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+</header>
+
+<!-- HEADER PC -->
+<header class="header_pc">
+    <div class="logo-img">
+        <img src="img/logo_olimpiadas.png" alt="logo">
+    </div>
+
+    
+    <nav class="header-nav">
+        <ul class="nav-pc_list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="deportes.html">Deportes</a></li>
+            <li><a href="acerca.html">Nosotros</a></li>
+            <li><a href="crud.html">CRUD</a></li>
+            <li><a href="busqueda.html">Busqueda</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main main-deportes">
+    <div class="row">
+        <table id="tablaPaises" class="table table-striped table-bordered" style="width:100%">
+          <thead>
+            <tr>
+              <th>Accion</th>
+              <th>Cod_Desc</th>
+              <th>Titulo</th>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpoTabla">
+            
+          </tbody>
+        </table>
+        <script src="index.js"></script>
+      </div>
+
+
+
+    <section class="seccion-deportes">
+        <h2>Gimnasia</h2>
+
+        <article class="definicion">
+            <div class="definicion-img">
+                <img src="img/fotoartistica.jpg" alt="gimnasia">
+            </div>
+            <p>Surge en la prehistoria como práctica física. En el siglo XIX se independiza de la gimnasia general. Esta disciplina ha estado presente en los Juegos Olímpicos modernos desde su primera edición en Atenas 1896, pero no sería hasta los Juegos de 1928 cuando se permitió participar a las mujeres.</p>      
+        </article>
+
+        <div class="equipamiento">
+            <p>Equipamiento</p>
+            <div class="equipamiento-img">
+                <img src="img/Equipamiento.png" alt="equipamiento gimnasia">
+            </div>    
+        </div>
+
+        <article class="reglas">
+            <h4>Reglas de Puntuación</h4> 
+
+            <p>Se asigna un nivel de dificultad a la tabla codificada de elementos gimnásticos. Cada ejercicio es evaluado por dos grupos de jueces, obteniendo así dos puntuaciones basándose en dos aspectos:</p> <br>
+
+            <p>Dificultad: Se suma la puntuación de los ocho elementos más difíciles (10 en los hombres).</p> <br>
+
+            <p>Ejecución: Se evalúa, hasta 10.0 puntos, la ejecución artística, penalizando los errores.</p>        
+        </article>
+
+        <article class="categorias">
+            <h4>Categorias</h4>
+
+
+            <article class="categorias-img">
+                <div><img src="img/Barras_paralelas.png" alt=""></div>
+                <div><img src="img/suelo.png" alt=""></div>
+            </article>
+
+
+
+            <ul class="ul-categorias">
+                <li>Suelo</li>
+                <li>Caballo con Arcos</li>
+                <li>Barra de Equilibrio</li>
+                <li>Anillas</li>
+                <li>Paralelas asimétricas</li>
+                <li>Barra fija</li>
+                <li>Paralelas</li>
+                <li>Salto de potro</li>
+            </ul>
+        </article>
+
+        
+
+
+    </section>
+
+    <section class="seccion-deportes">
+        <h2>Natación</h2>
+
+        <article class="definicion">
+            <div class="definicion-img">
+                <img src="img/foton-natacion.jpg" alt="gimnasia">
+            </div>
+            <p>La natación es una de las disciplinas tradicionales de los Juegos Olímpicos modernos, realizada desde la edición inaugural en Atenas 1896. Originalmente, las pruebas de natación se realizaban en el mar o un lago artificial. En 1908 las pruebas pasaron a realizarse en piscina. En 1924 se incorporaron los carriles, así como la longitud olímpica de 50 metros.</p>      
+        </article>
+
+        <div class="equipamiento">
+            <p>Equipamiento</p>
+            <div class="equipamiento-img">
+                <img src="img/Modelo_UC.jpg" alt="equipamiento natacion">
+            </div>    
+        </div>
+
+        <article class="reglas">
+            <h4>Reglas</h4> 
+
+            <p>La piscina de competición, también denominada "olímpica" tiene 50 metros de longitud y 25 de ancho, siguiendo el estándar de la FINA. La superficie se distribuye en ocho calles o carriles de 2,5 metros, más dos de tamaño más reducido -0,2 metros- en los extremos, con el fin de reducir el oleaje.</p> <br>
+
+            <p>Además del juez árbitro (de negro en la ilustración), hay 16 inspectores de virajes (azul oscuro), que tienen dos jefes de inspectores (naranja), dos jueces de salida (amarillo), 4 jueces de estilo (gris), 2 anotadores (verde) y 2 oficiales mayores (rojo).</p>    
+        </article>
+
+        <article class="categorias">
+            <h4>Categorias</h4>
+
+            <article class="categorias-img">
+                <div><img src="img/piscina.png" alt=""></div>
+                <div><img src="img/poyete.png" alt=""></div>
+            </article>
+
+            <ul class="ul-categorias">
+                <li>50 metros: estilo libre.</li>
+                <li>100 metros: estilo libre, espalda, pecho (braza), mariposa.</li>
+                <li>200 metros: estilo libre, espalda, pecho (braza), mariposa, combinados.</li>
+                <li>400 metros: estilo libre, combinados.</li>
+                <li>800 metros: estilo libre.</li>
+                <li>1500 metros: estilo libre.</li>
+                <li>4 x 100 metros: estilo libre.</li>
+                <li>4 x 200 metros: estilo libre.</li>
+                <li>4 x 100 metros: estilo libre, evento mixto.</li>
+                <li>Maratón, 10 kilómetros.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="seccion-deportes">
+        <h2>Atletismo</h2>
+
+        <article class="definicion">
+            <div class="definicion-img">
+                <img src="img/foto-grande.jpg" alt="gimnasia">
+            </div>
+            <p>El atletismo es considerado como el deporte "clásico" por excelencia. Según la leyenda, el maratón nació cuando un mensajero llamado Filípides, corrió hasta Atenas para anunciar a los griegos la derrota de los persas en la batalla de Maratón en el 490 a.C. A diferencia de otros deportes olímpicos, la participación femenina fue rápidamente aceptada en los Juegos de 1924.</p>      
+        </article>
+
+        <div class="equipamiento">
+            <p>Equipamiento</p>
+            <div class="equipamiento-img">
+                <img src="img/equipamiento_atletismo.png" alt="equipamiento natacion">
+            </div>    
+        </div>
+
+        
+        <article class="categorias">
+            <h4>Categorias</h4>
+
+
+            <article class="categorias-img">
+                <div><img src="img/100_a_400 metros.png" alt=""></div>
+                <div><img src="img/Saltos.png" alt=""></div>
+            </article>
+
+
+
+            <ul class="ul-categorias">
+                <li>Carreras 100m</li>
+                <li>Carreras 200m</li>
+                <li>Carreras 400m</li>
+                <li>Vallas 100m/110m</li>
+                <li>Vallas 400m</li>
+                <li>Triple Salto</li>
+                <li>Pértiga</li>
+
+            </ul>
+        </article>
+
+        
+
+
+    </section>
+    
+</main>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <article class="footer-autores">
+            <h3>Rosa Guadamuz</h3>
+            <p>guadamuz.rosa@gmail.com</p>
+        </article>
+
+        <article class="footer-autores">
+            <h3>Jeremi Chacón</h3>
+            <p>jeremichacon2000@gmail.com</p>
+        </article>
+
+        <article class="footer-autores">
+            <h3>Michael Jordan</h3>
+            <p>jordan50999@gmail.com</p>
+        </article>
+    </footer>
+</body>
+</html>
